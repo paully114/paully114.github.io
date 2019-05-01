@@ -6,31 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Paul Belamide - Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
+    
   </head>
   <body>
     <div class="container">
       <header>
         <img src="images/mylogo.png" alt="23andfour logo" class="logo" />
-
+        
         <nav>
           <a href="#" class="hide-desktop">
+            <!-- NAV HIDE FIRST
             <img
               src="images/ham.svg"
               alt="toggle menu"
               class="menu"
               id="menu"
-            />
+            />-->
           </a>
           <ul class="show-desktop hide-mobile" id="nav">
             <li id="exit" class="exit-btn hide-desktop">
               <img src="images/exit.svg" alt="exit menu" />
             </li>
-            
+            <!-- NAV HIDE FIRST
             <li><a href="#">home</a></li>
             <li><a href="#">my work</a></li>
             <li><a href="#">about</a></li>
             <li><a href="#">contact</a></li>
-            
+            -->
           </ul>
         </nav>
       </header>       
@@ -86,7 +88,7 @@
       </div>
     </div>
 
-    <div class="gray-container"></div>
+    <div class="gray-container">
     <h4>What if I rate my skills?</h2>
       <div class="bars">
       <section>
@@ -122,6 +124,24 @@
       </div>
     </div>
 
+
+
+    <div class="port-container">
+        <div class="container">
+         <h1>Recent Works</h1>
+          <ul>          
+            <li>
+              <img src="images/asd.png" alt="DW" />             
+            </li>
+            <li>
+              <img src="images/portfolio-3.jpg" alt="CS" />             
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+
+
     <div class="container">
       <h2>Check my CV!</h2>
       <a href="http://bit.ly/2PHohuo" target="_blank" class="cta">Download Here.</a>
@@ -143,14 +163,15 @@
     </footer>
 
     <script>
+      /*
       var menu = document.getElementById("menu");
       var nav = document.getElementById("nav");
-      var exit = document.getElementById("exit");
+      var exit = document.getElementById("exit");*/
       var pic = document.getElementById("picHover");
       var actualVid = document.getElementById("myVideo");
       var text = document.getElementById("textBlack");
 
-      menu.addEventListener("click", function(e) {
+      /*menu.addEventListener("click", function(e) {
         nav.classList.toggle("hide-mobile");
         e.preventDefault();
       });
@@ -159,7 +180,7 @@
         nav.classList.add("hide-mobile");
         e.preventDefault();
         
-      });
+      });*/
 
       pic.addEventListener('mouseover',function(){
         actualVid.classList.toggle("hide-video");

@@ -120,6 +120,61 @@ h3 {
   width: 25%;
 }
 
+.port-container {
+  width: 100%;
+  background: #ff4242;
+  color: #fff;
+  margin-top: 15%;
+  padding: 4em 0 2em;
+  border-top-left-radius: 40px;
+  transform: skewY(-2deg);
+}
+
+.port-container:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #ff4242;
+  position: absolute;
+  top: -39px;
+  right: 0;
+  z-index: -2;
+}
+
+.port-container:after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  top: -80px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.port-container h1 {
+  transform: skewY(2deg);
+}
+
+.port-container ul {
+  transform: skewY(2deg);
+}
+
+.port-container ul li p {
+  padding: 0 0.5em 1em;
+}
+
+h3 {
+  margin: 0.5em auto 0.5em;
+  padding: 0;
+}
+
+.port-container img {
+  width: 100%;
+  margin-top: 1.5em;
+}
+
 .gray-container {
   background: #f6f6f6;
   padding: 4em 0 2em;
@@ -290,6 +345,28 @@ nav ul li a:hover {
     padding: 0 0.8em;
   }
 
+  .port-container {
+    margin: 0;
+  }
+
+  .port-container img {
+    width: 100%;
+  }
+
+  .port-container ul {
+    display: flex;
+    margin-top: -1em;
+    align-items: center;
+  }
+
+  .port-container ul li {
+    margin-bottom: 0;
+  }
+
+  .port-container ul li p {
+    padding: 0 0.8em;
+  }
+
   .gray-container ul {
     display: flex;
   }
@@ -313,6 +390,10 @@ nav ul li a:hover {
     margin: 0 0 4% 0;
   }
 
+  .port-container ul {
+    margin: 0 0 4% 0;
+  }
+
   .gray-container ul {
     margin: 4% 0 0;
   }
@@ -325,16 +406,6 @@ nav ul li a:hover {
 @media only screen and (min-width: 1024px) {
   .cta {
     width: 50%;
-  }
-
-  .blue-container ul li:nth-child(1) img {
-    width: 40%;
-    margin-top: -0.1em;
-  }
-
-  .blue-container ul li:nth-child(3) img {
-    width: 40%;
-    margin-top: -1em;
   }
 
   .container {
@@ -405,6 +476,15 @@ nav ul li a:hover {
   }
 
   .blue-container ul li p,
+  blockquote {
+    font-size: 1.3em;
+  }
+
+  .port-container {
+    padding: 7em 0 2em;
+  }
+
+  .port-container ul li p,
   blockquote {
     font-size: 1.3em;
   }

@@ -393,7 +393,7 @@ nav ul li a:hover {
 @media only screen and (min-width: 1600px) {
   .server {
     width: 40%;
-    margin: 5em auto 4em 15%;
+    margin: 5em auto 4em auto;
   }
 
   .container {
@@ -417,13 +417,14 @@ nav ul li a:hover {
     margin-top: 4em;
   }
 
-  .blue-container img {
-    width: 15%;
+  .blue-container ul li:nth-child(1) img {
+    width: 40%;
+    margin-top: -0.1em;
   }
 
   .blue-container ul li:nth-child(3) img {
-    width: 8%;
-    margin-top: -4px;
+    width: 40%;
+    margin-top: -1em;
   }
 }
 

@@ -123,11 +123,12 @@ h3 {
 .port-container {
   width: 100%;
   background: #ff4242;
-  color: #fff;
+  color: #f6f6f6;
   margin-top: 15%;
   padding: 4em 0 2em;
   border-top-left-radius: 40px;
   transform: skewY(-2deg);
+  display: grid;
 }
 
 .port-container:before {
@@ -145,7 +146,7 @@ h3 {
   content: "";
   width: 80px;
   height: 80px;
-  background-color: #fff;
+  background-color: #f6f6f6;
   top: -80px;
   position: absolute;
   right: 0;
@@ -303,6 +304,75 @@ nav ul li a:hover {
   margin: 5%;
 }
 
+.slidershow {
+  margin-top: -1em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: skewY(2deg);
+}
+
+.slidershow h2 {
+  margin-bottom: -0.5em;
+}
+
+.baz {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.baz:hover {
+  background: #fff;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
 @media only screen and (min-width: 650px) {
   .server {
     width: 50%;
@@ -446,6 +516,10 @@ nav ul li a:hover {
     background-color: inherit;
   }
 
+  .slidershow {
+    margin-top: -5em;
+  }
+
   .scroll {
     width: 30px;
     animation: move 1s infinite alternate;
@@ -505,6 +579,10 @@ nav ul li a:hover {
   .blue-container ul li:nth-child(3) img {
     width: 40%;
     margin-top: -1em;
+  }
+
+  .slidershow {
+    margin-top: -8em;
   }
 }
 

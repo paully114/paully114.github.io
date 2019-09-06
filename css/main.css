@@ -417,6 +417,7 @@ input[name="r"] {
 
   .port-container {
     margin: 0;
+    align-items: center;
   }
 
   .port-container img {
@@ -431,6 +432,7 @@ input[name="r"] {
 
   .port-container ul li {
     margin-bottom: 0;
+    align-items: center;
   }
 
   .port-container ul li p {
